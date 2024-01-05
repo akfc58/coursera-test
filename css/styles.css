@@ -1,0 +1,143 @@
+/* universal settings */
+
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+* {
+    border: 1px dotted pink;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    /* 10px */
+}
+
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+
+
+
+/* nav settings */
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: fixed;
+    background-color: var(--main-red);
+}
+
+.nav-lists {
+    display: flex;
+}
+
+.nav-lists a {
+    display: block;
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.nav-lists li:hover {
+    background-color: var(--main-gray);
+}
+
+/* Welcome section */
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--main-gray);
+    color: var(--main-white);
+}
+
+.welcome-section p {
+    font-style: italic;
+    color: #be3144;
+    font-weight: 700;
+}
+
+
+/* projects section */
+img {
+    display: block;
+    width: 100%;
+  }
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+
+.projects-grid .project-tile {
+    display: flex;
+        flex-direction: column;
+        max-width: 100%;
+}
+
+
+
+
+/* contact and footer */
+.last-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+  }
